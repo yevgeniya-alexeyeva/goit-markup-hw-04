@@ -22,6 +22,7 @@ html {
   --filbut-team-bg: #f5f4fa;
   --header-footer-bg: #2f303a;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --icon-color: #AFB1B8;
 }
 
 body {
@@ -139,17 +140,19 @@ header {
 }
 .icon-mail {
   margin-right: 10px;
+  fill: var(--text-color);
 }
 .icon-smartphone {
   margin-right: 10px;
+  fill: var(--text-color);
 }
 .header-contacts.mail:hover,
 .header-contacts.mail:focus .icon-mail {
-  --color1: #2196f3;
+  fill: var(--accent-color);
 }
 .header-contacts.smartphone:hover,
 .header-contacts.smartphone:focus .icon-smartphone {
-  --color1: #2196f3;
+  fill: var(--accent-color);
 }
 
 /* ==Footer==*/
@@ -216,7 +219,7 @@ header {
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  --color3: #ffffff;
+  fill: var(--hero-color)
 }
 
 /*====Studio====*/
@@ -401,6 +404,7 @@ header {
 .social-icon {
   width: 20px;
   height: 20px;
+  fill: var(--icon-color);
 }
 /*.social-icon:focus,
 .social-icon:hover {
@@ -420,7 +424,7 @@ header {
 }
 .social-link:hover,
 .social-link:focus > .social-icon {
-  --color3: #fff;
+  fill: var(--hero-color);
 }
 
 /*Our clients*/
@@ -456,9 +460,12 @@ header {
 .clients-link:focus {
   border-color: var(--accent-color);
 }
+.client-icon {
+  fill: var(--icon-color);
+}
 .clients-link:hover,
 .clients-link:focus .client-icon {
-  --color3: #2196f3;
+  fill: var(--accent-color);
 }
 
 /*====Portfolio====*/
