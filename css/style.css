@@ -209,7 +209,9 @@ header {
 .social-link.infooter {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  fill: var(--hero-color)
+}
+.infooter>.social-icon {
+  fill: var(--hero-color);
 }
 
 /*====Studio====*/
@@ -396,10 +398,7 @@ header {
   height: 20px;
   fill: var(--icon-color);
 }
-/*.social-icon:focus,
-.social-icon:hover {
-  --color2: #fff;
-}*/
+
 .social-link {
   display: flex;
   align-items: center;
@@ -453,8 +452,9 @@ header {
 .client-icon {
   fill: var(--icon-color);
 }
+
 .clients-link:hover,
-.clients-link:focus .client-icon {
+.clients-link:focus > .client-icon {
   fill: var(--accent-color);
 }
 
