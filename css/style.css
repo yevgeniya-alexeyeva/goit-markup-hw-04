@@ -453,7 +453,9 @@ header {
   fill: var(--icon-color);
 }
 
-.clients-link:hover,
+.clients-link:hover > .client-icon {
+  fill: var(--accent-color);
+}
 .clients-link:focus > .client-icon {
   fill: var(--accent-color);
 }
