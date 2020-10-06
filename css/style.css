@@ -411,7 +411,9 @@ header {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
-.social-link:hover,
+.social-link:hover > .social-icon {
+  fill: var(--hero-color);
+}
 .social-link:focus > .social-icon {
   fill: var(--hero-color);
 }
