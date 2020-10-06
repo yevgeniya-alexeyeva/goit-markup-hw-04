@@ -140,19 +140,11 @@ header {
 }
 .icon-mail {
   margin-right: 10px;
-  fill: var(--text-color);
+  fill: currentColor;
 }
 .icon-smartphone {
   margin-right: 10px;
-  fill: var(--text-color);
-}
-.header-contacts.mail:hover,
-.header-contacts.mail:focus .icon-mail {
-  fill: var(--accent-color);
-}
-.header-contacts.smartphone:hover,
-.header-contacts.smartphone:focus .icon-smartphone {
-  fill: var(--accent-color);
+  fill:currentColor;
 }
 
 /* ==Footer==*/
@@ -215,8 +207,6 @@ header {
   display: flex;
 }
 .social-link.infooter {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)),
-    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: var(--hero-color)
@@ -498,6 +488,7 @@ header {
   color: var(--title-color);
   background: var(--filbut-team-bg);
 }
+
 .filter-button:hover,
 .filter-button:focus {
   color: var(--hero-color);
@@ -544,10 +535,11 @@ header {
 .work-list-link {
   display: block;
 }
-.work-list-link:focus,
-.work-list-link:hover .work-list-item {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.work-list-link:hover,
+.work-list-link:focus > .work-list-item {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-list-item:not(:nth-child(3n)) {
