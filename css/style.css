@@ -194,9 +194,7 @@ header {
 .footer-social-container {
   display: inline-block;
   width: 206px;
-  height: 80px;
   margin-left: 70px;
-  padding-top: 12px;
 }
 .footer-social-list {
   display: flex;
@@ -205,6 +203,7 @@ header {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .social-link.infooter {
   border-radius: 50%;
